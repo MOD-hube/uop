@@ -1,0 +1,226 @@
+/* تنسيق الجسم الرئيسي للصفحة */
+body {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    background: url('p.jpg') no-repeat center center fixed;
+    background-size: cover; /* تغطية الخلفية لكل الصفحة */
+}
+
+/* تنسيق العنوان الرئيسي */
+header {
+    background-color: rgba(128, 203, 196, 0.0); /* جعل الخلفية شفافة */
+    text-align: center;
+    padding: 2px 0;
+    position:relative;
+}
+
+/* حاوية الشعار */
+.logo-container {
+    display: inline-block;
+    position: relative;
+}
+
+/* تنسيق شعار المكتبة */
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #004D40; /* لون النص أخضر داكن */
+    text-shadow: 2px 2px 4px #FFFFFF; /* إضافة ظل للنص */
+}
+
+/* تنسيق القائمة الرئيسية */
+nav {
+    background-color: rgba(178, 235, 242, 0.8); /* لون خلفية شفاف */
+    text-align: center; /* محاذاة القائمة إلى المركز */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* جعل القائمة تظهر كتلة واحدة */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #004D40; /* لون النص أخضر داكن */
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 77, 64, 0.8); /* لون الخلفية شفاف */
+    color: #B2EBF2; /* لون النص أزرق فاتح */
+}
+
+/* تنسيقات صفحة الـ Products */
+.products {
+    background: rgba(255, 255, 255, 0.8); /* إعادة الخلفية الشفافة */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 35%; /* تحديد عرض أقصى للمربع */
+    margin-left: auto; /* ضبط المربعات في الوسط */
+    margin-right: auto; /* ضبط المربعات في الوسط */
+}
+
+.product-item {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px; /* تقليل الحواف الداخلية للمربع */
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 80%; /* تقليل حجم الصورة */
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin-top: 10px; /* تقليل المسافة العلوية */
+    font-size: 20px; /* تقليل حجم الخط */
+    color: #333;
+}
+
+.product-item p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px; /* تقليل حجم الخط للنص */
+}
+
+/* تنسيقات صفحة About Us */
+.about {
+    background: rgba(255, 255, 255, 0.8); /* إعادة الخلفية الشفافة */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 80%; /* تحديد عرض أقصى للمربع */
+    margin-left: auto; /* ضبط المربعات في الوسط */
+    margin-right: auto; /* ضبط المربعات في الوسط */
+}
+
+.about h2, .about h3 {
+    color: #333;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* تنسيقات صفحة Gallery */
+.gallery {
+    background: rgba(255, 255, 255, 0.8); /* إعادة الخلفية الشفافة */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 80%; /* تحديد عرض أقصى للمربع */
+    margin-left: auto; /* ضبط المربعات في الوسط */
+    margin-right: auto; /* ضبط المربعات في الوسط */
+    display: flex;       /* إضافة خاصية Flexbox */
+    flex-wrap: wrap;     /* السماح بالتفاف العناصر */
+    justify-content: center; /* محاذاة العناصر في المركز */
+}
+
+.gallery-item {
+    margin: 10px;
+    flex-basis: 30%;     /* تحديد عرض العنصر بنسبة معينة لتناسب 3 صور في الصف الواحد */
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;      /* عرض الصورة كبلوك */
+    margin-left: auto;   /* إضافة مساحة تلقائية على اليسار */
+    margin-right: auto;  /* إضافة مساحة تلقائية على اليمين */
+}
+
+.gallery-item p {
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;     /* تقليل حجم الخط للنص */
+}
+
+/* تنسيقات صفحة Contact Us */
+.contact {
+    background: rgba(255, 255, 255, 0.8); /* إعادة الخلفية الشفافة */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px; /* تحديد عرض أقصى للمربع */
+    margin-left: auto; /* ضبط المربعات في الوسط */
+    margin-right: auto; /* ضبط المربعات في الوسط */
+}
+
+.contact h2 {
+    color: #333;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #004D40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+}
+
+.contact button:hover {
+    background-color: #003D33;
+}
+
+/* تنسيق الفوتر */
+footer {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(178, 235, 242, 0.8); /* نفس لون خلفية القائمة الرئيسية */
+    color: #004D40; /* لون النص أخضر داكن */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries لضبط عرض الصور بناءً على حجم الشاشة */
+@media (max-width: 1024px) {
+    .gallery-item {
+        flex-basis: 45%; /* لتناسب الصور شاشات أصغر */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex-basis: 90%; /* لتناسب الصور شاشات الهواتف */
+    }
+}

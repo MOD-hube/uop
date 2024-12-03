@@ -1,0 +1,81 @@
+/* تنسيق الجسم الرئيسي للصفحة */
+body {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    background: url('p.jpg') no-repeat center center fixed;
+    background-size: cover; /* تغطية الخلفية لكل الصفحة */
+}
+/* تنسيق العنوان الرئيسي */
+header {
+    background-color: rgba(128, 203, 196, 0.0); /* جعل الخلفية شفافة */
+    text-align: center;
+    padding: 2px 0;
+    position:relative;
+}
+/* حاوية الشعار */
+.logo-container {
+  
+    display: inline-block;
+    position: relative;
+}
+
+/* تنسيق شعار المكتبة */
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #004D40; /* لون النص أخضر داكن */
+    text-shadow: 2px 2px 4px #FFFFFF; /* إضافة ظل للنص */
+}
+
+/* تنسيق القائمة الرئيسية */
+nav {
+    background-color: rgba(178, 235, 242, 0.8); /* لون خلفية شفاف */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #004D40; /* لون النص أخضر داكن */
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 77, 64, 0.8); /* لون الخلفية شفاف */
+    color: #B2EBF2; /* لون النص أزرق فاتح */
+}
+
+/* تنسيق الأقسام الأساسية */
+section {
+    font-family: 'Lobster', cursive; 
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 253, 231, 0.8); /* خلفية بلون أصفر فاتح شفاف */
+    border-radius: 40px;
+    border: 2px solid #80CBC4; /* حدود باللون الأخضر الفاتح */
+}
+
+/* تنسيق الفوتر */
+footer {
+     font-family: 'Lobster', cursive; 
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(178, 235, 242, 0.8); /* نفس لون خلفية القائمة الرئيسية */
+    color: #004D40; /* لون النص أخضر داكن */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
